@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tabs">
+        <button id="shopsTab">Shops</button>
+        <button id="cartTab">Cart</button>
+    </div>
+    <div id="container">
+        <div id="selection">
+            <div id="shops">
+                <!-- Shops will be loaded here -->
+            </div>
+            <div id="drugs">
+                <!-- Drugs will be loaded here -->
+            </div>
+        </div>
+        <div id="cart" style="display:none;">
+            <h2>Cart</h2>
+            <div class="cart-flex-container">
+                <div class="cart-info">
+                    <form id="customerInfo">
+                        <input type="text" placeholder="Name" id="customerName"><br>
+                        <input type="email" placeholder="Email" id="customerEmail"><br>
+                        <input type="tel" placeholder="Phone" id="customerPhone"><br>
+                        <textarea placeholder="Address" id="customerAddress"></textarea><br>
+                        <button type="button" onclick="submitOrder()">Submit Order</button>
+                    </form>
+                </div>
+                <div id="cart-items">
+                    <!-- Cart items will be listed here -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
